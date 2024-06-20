@@ -1,0 +1,8 @@
+<div class="gallery">
+  <div class="image-container">
+    <img src="./assets 2/background/background.png" alt="Image 1">
+  </div>
+  <body>
+    <div class="background2"></div>
+  </body>
+  

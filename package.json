@@ -3,13 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "@coinbase/wallet-sdk": "^3.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@openzeppelin/contracts": "^4.9.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@wagmi/core": "^1.4.13",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/html": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "assert": "^2.0.0",
+    "bootstrap": "^5.3.1",
+    "coinbase-wallet-sdk": "^0.0.1-security",
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^5.0.1",
+    "framer-motion": "^10.15.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "typescript": "^4.5.0",
+    "url": "^0.11.1",
+    "viem": "^1.21.4",
+    "wagmi": "^1.4.2",
+    "walletlink": "^2.5.0",
+    "web-vitals": "^2.1.4",
+    "web3": "^4.1.1",
+    "web3modal": "^1.9.12"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +63,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.17.0",
+    "react-app-rewired": "^2.2.1"
   }
 }

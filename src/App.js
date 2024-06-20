@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import "./App.css";
+import MainMint from "./MainMint";
+import NavBar from "./NavBar";
+import About from './About';
+import Team from './Team';
+import Roadmap from './Roadmap';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [accounts, setAccounts] = useState([]);
+
+    return (
+        <Router>
+            <div className="app-container">
+                <NavBar accounts={accounts} setAccounts={setAccounts} />
+                <MainMint accounts={accounts} setAccounts={setAccounts} />
+            </div>
+
+            <div className="background-container"></div>
+
+            <Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/roadmap" element={<Roadmap />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
